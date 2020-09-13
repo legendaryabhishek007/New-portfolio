@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ECECEC;
+  font-family: 'Roboto Slab', serif;
+}
+
+#recent-works {
+  margin: 6rem 0 3rem 0;
+  text-align: center;
+}
+
+.my-work {
+  text-align: center;
+}
+
+.my-work .work {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  min-height: 40rem;
+}
+
+.my-work .work .work-left h2 {
+  margin: 2em;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #fff;
+}
+
+.my-work .work .work-left img {
+  -webkit-box-shadow: -10px 10px 50px rgba(248, 248, 248, 0.11);
+          box-shadow: -10px 10px 50px rgba(248, 248, 248, 0.11);
+}
+
+.my-work .work .work-left p {
+  margin: 1em;
+  color: #fff;
+  margin-bottom: 5em;
+}
+
+.my-work .work .work-right p {
+  justify-items: center;
+  margin-top: 12em;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 80%;
+  line-height: 1.8em;
+}
+
+.my-work .work1 {
+  background-color: #34495e;
+  background-image: linear-gradient(70deg, #34495e 20%, #67bec1 80%);
+}
+
+.my-work .work1 img {
+  width: 30em;
+  height: auto;
+}
+
+.my-work .work1 .work-right p {
+  background: #67bec1;
+  background-image: -webkit-gradient(linear, left top, right top, from(#98e1e4), to(#67bec1));
+  background-image: linear-gradient(90deg, #98e1e4, #67bec1);
+}
+
+.my-work .work2 {
+  background-color: #040404;
+  background-image: linear-gradient(76deg, #040404 0%, #585470 86%);
+}
+
+.my-work .work2 img {
+  width: 40em;
+  height: auto;
+  border-radius: 10px;
+}
+
+.my-work .work2 .work-right p {
+  background: #585470;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7f7a9e), color-stop(70, #585470));
+  background-image: linear-gradient(90deg, #7f7a9e, #585470 70);
+}
+
+@media (max-width: 1444px) {
+  .my-work {
+    text-align: center;
+  }
+  .my-work .work {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    min-height: 20rem;
+  }
+  .my-work .work .work-left p {
+    margin-bottom: 3em;
+  }
+  .my-work .work .work-right p {
+    margin: 0em;
+    padding: 5rem 20%;
+    width: auto;
+    border-radius: 0;
+  }
+  .my-work .work1 img {
+    width: 25em;
+    height: auto;
+  }
+  .my-work .work2 img {
+    width: 40em;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+/*# sourceMappingURL=work.css.map */

@@ -1,0 +1,127 @@
+* {  
+  padding: 0;
+  margin: 0;
+}
+
+$black-text: rgb(24, 24, 24);
+
+body{
+  background-color: #ECECEC;
+  font-family: 'Roboto Slab', serif;
+}
+
+#recent-works {
+  margin: 6rem 0 3rem 0;
+  text-align: center;
+}
+
+.my-work{  
+  text-align: center;
+
+  .work{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 40rem;
+    // font-family: 'rakkas', 'sans-serif';
+    
+    
+    .work-left{
+      h2 {
+        margin: 2em;
+        font-size: 1.8em;
+        font-weight: 600;
+        color: #fff;
+
+      }
+      img {
+        box-shadow: -10px 10px 50px rgba(248, 248, 248, 0.11);
+      }
+      p {
+        margin: 1em;
+        color: #fff;
+        margin-bottom: 5em;
+      }
+    }
+    .work-right{
+      p{        
+        justify-items: center;
+        margin-top: 12em;
+        padding: 2rem;
+        border-radius: 20px;
+        width: 80%;
+        line-height: 1.8em;
+        
+      }
+    }    
+  }
+  .work1{
+    background-color: #34495e;
+    background-image: linear-gradient(70deg, #34495e 20%, #67bec1 80%);
+
+    img {
+      width: 30em;
+      height: auto;
+    }
+    .work-right p {
+      background: #67bec1;
+      background-image: linear-gradient(90deg, rgb(152, 225, 228), rgb(103, 190, 193));
+    }
+  }
+  .work2 {
+    background-color: #040404;
+    background-image: linear-gradient(76deg, #040404 0%, #585470 86%);
+    
+    img {
+      width: 40em;
+      height: auto;
+      border-radius: 10px;
+    }
+    .work-right p {
+      background: #585470;
+      background-image: linear-gradient(90deg, rgb(127, 122, 158), rgb(88, 84, 112)70);
+    }
+  }
+}
+
+
+@media (max-width: 1444px) {
+  .my-work{  
+    text-align: center;
+  
+    .work{
+      grid-template-columns: 1fr;
+      min-height: 20rem;
+      
+      
+      .work-left{
+        p {
+          margin-bottom: 3em;
+        }
+      }
+      .work-right{
+        p{        
+          margin: 0em;
+          padding: 5rem 20%;
+          width: auto;
+          border-radius: 0;          
+        }
+      }    
+    }
+    .work1{     
+      img {
+        width: 25em;
+        height: auto;
+      }
+
+    }
+    .work2 {      
+      img {
+        width: 40em;
+        height: auto;
+        border-radius: 10px;
+      }
+
+    }
+  }
+}
+
